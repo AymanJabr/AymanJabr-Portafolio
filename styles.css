@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+}
+
+.divider{
+    background-color: #eee;
+}
+
+#intro{
+    background-image: url("./images/intro.jpg");
+    height: 400px;
+}
+
+#book{
+    background-image: url("./images/book.jpg");
+    height: 300px;
+    background-size: cover;
+}
+
+
+@media(min-width: 576px){
+    #intro{
+        height: 600px;
+    }
+}
