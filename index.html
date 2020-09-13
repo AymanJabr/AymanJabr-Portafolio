@@ -2,273 +2,242 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayman Jabr Portafolio</title>
+
     <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
     />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="./styles.css"/>
-    <!-- Custom styles -->
-    <style></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./defaul.css" />
+    <link id="theme-style" rel="stylesheet" href="" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
-    
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <!-- Container wrapper -->
-        <div class="container">
-          <!-- Navbar brand -->
-          <a class="navbar-brand" href="#">Steak House</a>
-      
-          <!-- Toggle button -->
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Collapsible wrapper -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- Left links -->
-            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#book">Book</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#team">Team</a>
-              </li>
-              
-                </ul>
-              </li>
-              
+    <section class="s1">
+      <div class="main-container">
+        <div class="greeting-wrapper">
+          <h1>Hi, I am Ayman Jabr</h1>
+        </div>
+
+        <div class="intro-wrapper">
+          <div class="nav-wrapper">
+            <div class="dots-wrapper">
+              <div id="dot-1" class="browser-dot"></div>
+              <div id="dot-2" class="browser-dot"></div>
+              <div id="dot-3" class="browser-dot"></div>
+            </div>
+
+            <ul id="navigation">
+              <li><a href="#contact-form">Contact</a></li>
             </ul>
-            <!-- Left links -->
           </div>
-          <!-- Collapsible wrapper -->
-        </div>
-        <!-- Container wrapper -->
-      </nav>
+          <div class="left-column">
+            <img id="profile_pic" src="./images/me.jpg" />
 
-      <!-- Background image -->
-      <div class="p-5 text-center bg-image" id="intro">
-        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-          <div class="d-flex justify-content-center align-items-center h-100">
-            <div class="text-white">
-              <h1 class="mb-3">Steak House</h1>
-              <h4 class="mb-3">A premium and authentic steak house</h4>
-              <a class="btn btn-outline-light btn-lg mb-2" href="#!" role="button">See menu</a>
-              <a class="btn btn-outline-light btn-lg mb-2" href="#!" role="button">Book a table</a>
+            <h5 style="text-align: center; line-height: 0">
+              Personalize Theme
+            </h5>
+
+            <div id="theme-options-wrapper">
+              <div data-mode="light" id="light-mode" class="theme-dot"></div>
+              <div data-mode="blue" class="theme-dot" id="blue-mode"></div>
+              <div data-mode="green" id="green-mode" class="theme-dot"></div>
+              <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+            </div>
+
+            <p id="settings-note">
+              *Theme settings will be saved for <br />
+              your next visit
+            </p>
+          </div>
+
+          <div class="right-column">
+            <div class="preview-shadow">
+              <div id="preview">
+                <div id="corner-tl" class="corner"></div>
+                <div id="corner-tr" class="corner"></div>
+                <h3>What I Do</h3>
+                <p>
+                  I Design, Develop, and Deploy beautiful and modern websites,
+                  and Android Applications.
+                </p>
+                <div id="corner-br" class="corner"></div>
+                <div id="corner-bl" class="corner"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <main>
+    </section>
 
+    <section class="s2">
+      <div class="main-container">
+        <div class="about-wrapper">
+          <div class="about-me">
+            <h4>More about me</h4>
 
-      <div class="container-fluid px-0">
-        <section class="divider py-5">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-4 pr-5 text-right">
-              <h2>Discover our menu</h2>
-            </div>
-            <div class="col-md-4">
-              <p>Few things come close to the joy of steak and chips cooked simply with tender, loving care. Rest assured that our chefs treat our Irish beef with the respect it deserves. The open kitchen in many of our steakhouses are testimony to that.</p>
+            <p>
+              Self-thought Web Developer and Industrial Engineer who loves a
+              good intellectual challenge.
+            </p>
+
+            <p>
+              I spend my free-time with anything programming related, whether
+              web development, game design, hacking, or blockchain.
+            </p>
+
+            <hr />
+
+            <h4>Top Expertise</h4>
+
+            <p>
+              Frontend web development with React + Android Studio:
+              <a target="_blank" href="./CV_Resume.pdf">Download Full Resume</a>
+            </p>
+
+            <div id="skills">
+              <ul>
+                <li>JavaScript</li>
+                <li>Android Studio</li>
+                <li>React</li>
+                <li>HTML5/CSS</li>
+                <li>Python</li>
+              </ul>
+
+              <ul>
+                <li>HERE Maps API</li>
+                <li>Matlab</li>
+                <li>Excel VBA</li>
+                <li>SQL</li>
+              </ul>
             </div>
           </div>
-      </section>
+
+          <div class="social-links">
+            <h3>Find me on LinkedIn & GitHub</h3>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ayman-jabr-3705a4100/"
+              >LinkedIn</a
+            >
+            <br />
+            <a href="https://github.com/AymanJabr" target="_blank">GitHub </a>
+          </div>
+        </div>
       </div>
-      
-      <section id="about" class="text-center text-white">
-        <h2 class="my-5">Our promise:</h2>
+    </section>
 
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-4 text-right">
-            <h2>100% meat</h2>
-            <p>Meat always comes to us from the same supplier. For years it has not disappointed us with quality. It is usually fresh, sometimes frozen. At least 3 times a week.</p>
-          </div>
-          <div class="col-md-4">
-            <img src="./images/1.jpg" alt="meat" class="img-fluid">
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-4 text-right">
-            <h2>100% spices</h2>
-            <p>The quality of the beef served at Whiskey in the Jar is so high that it is a shame to spoil its flavor with too many spices. We are minimalist with respect to the issue. Just before putting on the barbecue, the meat is lightly sprinkled with Himalayan salt and black hammered pepper.</p>
-          </div>
-          <div class="col-md-4">
-            <img src="./images/2.jpg" alt="meat" class="img-fluid">
-          </div>
-        </div>
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-4 text-right">
-            <h2>100% taste</h2>
-            <p>Good taste is what we are up to. We cook with passion, courageously combine ingredients, creating original recipes of dishes. We take wings when guests like our kitchen.</p>
-          </div>
-          <div class="col-md-4">
-            <img src="./images/3.jpg" alt="meat" class="img-fluid">
-          </div>
-        </div>
-      </section>
+    <section class="s1">
+      <div class="main-container">
+        <h3 style="text-align: center">Some of my past projects</h3>
 
-      <section id="book">
-       
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white">
-                
-                <a class="btn btn-outline-light btn-lg mb-2" href="#!" role="button">Book a table</a>
+        <div class="post-wrapper">
+          <div class="stack-container">
+            <div class="post">
+              <img class="thumbnail" src="./images/dog website.JPG" alt="" />
+              <div class="post-preview">
+                <h6 class="post-title">Landing Pages</h6>
+                <p class="post-intro">
+                  Landing pages that showcase different businesses, click the
+                  link below to see if one of them fits your company needs.
+                </p>
+                <a href="./landingPages.html">See all Landing pages.</a>
               </div>
-            
-        </div>
-      </section>
-
-      <section id="team" class="text-center ">
-        <h2 class="my-5 text-white">Our team:</h2>
-
-        <div class="row justify-content-center align-items-center">
-          <div class="col-md-3"><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/t1.jpg" alt="..." class="img-fluid" />
+            </div>
+            <div class="stack"></div>
+            <div class="stack2"></div>
+          </div>
+          <div>
+            <div class="post">
+              <img
+                class="thumbnail"
+                src="./images/HERE Maps webpage.JPG"
+                alt=""
+              />
+              <div class="post-preview">
+                <h6 class="post-title">HERE Maps project</h6>
+                <p class="post-intro">
+                  This project shows the nearest facilities near you depending
+                  on your search criteria, using the HERE maps API.
+                </p>
+                <a>(Still in development)</a>
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Fig</h5>
-                  <p class="card-text">
-                    I cook traditional recipes that are sacred in my family, to share my love for food.
+            </div>
+          </div>
+          <div>
+            <div class="stack-container">
+              <div class="post">
+                <img
+                  class="thumbnail"
+                  src="./images/Tic-Tac-Toe game.JPG"
+                  alt=""
+                />
+                <div class="post-preview">
+                  <h6 class="post-title">Small Projects and Games</h6>
+                  <p class="post-intro">
+                    This is to showcase some of the smaller projects I have
+                    worked on, that can be integrated easily in any webpage.
                   </p>
-                  <p class="card-text">
-                    <small class="text-muted"></small>
-                  </p>
+                  <a href="./smallProjects.html">See all small projects</a>
                 </div>
               </div>
+              <div class="stack"></div>
+              <div class="stack2"></div>
             </div>
-          </div></div>
-          <div class="col-md-3"><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/t2.jpg" alt="..." class="img-fluid" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Sumit</h5>
-                  <p class="card-text">
-                    I believe cooking is like creating art. You have to carefully craft each dish with love and time.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div></div>
-          <div class="col-md-3"><div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="./images/t3.jpg" alt="..." class="img-fluid" />
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Febrian</h5>
-                  <p class="card-text">
-                    I strongly believe eating out should be a part of everyone's routine. 
-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div></div>
-        </div>
-
-      </section>
-
-    </main>
-    <footer>
-      <footer class="bg-black text-white text-center text-lg-left">
-        <!-- Grid container -->
-        <div class="container p-4">
-          <!--Grid row-->
-          <div class="row">
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-5">Locations:</h5>
-      
-              <p>
-                225 Halifax Court <br />
-                New York, NY 10031
-                <br />
-                (248) 675-4007
-              </p>
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <p>
-                416 NE. Sherman <br />
-                New York, NY 10027
-                <br />
-                (248) 675-4007
-              </p>
-
-              <p><br />
-                59 North Shadow Brook St. <br />
-                Bronx, NY 10457
-                <br />
-                (248) 675-4007
-              </p>
-      
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-             
-            </div>
-            <!--Grid column-->
-      
-            <!--Grid column-->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase mb-5">Working hours:</h5>
-              <div class="row">
-                <div class="col-6">
-                  <p>Monday-Friday</p>
-                  <p>Saturday</p>
-                  <p>Sunday</p>
-                </div>
-                <div class="col-6">
-                  <p>9:00 AM - 5:00 PM</p>
-                  <p>12:00 AM - 11:00 PM</p>
-                  <p>9:00 AM - 10:00 PM</p>
-              </div>
-      
-            </div>
-            <!--Grid column-->
           </div>
-          <!--Grid row-->
         </div>
-        <!-- Grid container -->
-      
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2020 Copyright:
-          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-        </div>
-        <!-- Copyright -->
-      </footer>
-    </footer>
+      </div>
+    </section>
 
+    <section class="s2">
+      <div class="main-container">
+        <h3 style="text-align: center">Get In Touch</h3>
+
+        <p style="margin-top: 5px; margin-bottom: 40px; text-align: center">
+          You can email me at
+          <span style="color: blue">aymanjaber2012@gmail.com</span> or directly
+          fill the form below.
+        </p>
+
+        <form id="contact-form">
+          <label>Name</label>
+          <input type="text" id="email_name" name="name" class="input-field" />
+          <label>Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="email_subject"
+            class="input-field"
+          />
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email_email"
+            class="input-field"
+          />
+          <label>Message</label>
+          <textarea
+            class="input-field"
+            id="email_message"
+            name="message"
+          ></textarea>
+
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
+      </div>
+    </section>
   </body>
-
-  <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
-  <script type="text/javascript"></script>
 </html>
