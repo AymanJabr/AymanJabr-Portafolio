@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facilities Near you</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.api.here.com/v3/3.1/mapsjs-ui.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      type="module"
+      src="https://js.api.here.com/v3/3.1/mapsjs.bundle.js"
+    ></script>
+
+    <script type='text/javascript' src='config.js'></script>
+
+    <script src="./code.js" defer></script>
+  </head>
+  <body>
+    <div id="settingsContainer" style="margin-left: -20.8vw;">
+      <div id="findLocationContainer">
+        <button id="findMyLocationBtn" type="button" class="btn btn-primary">
+          Find my Location
+        </button>
+        <div class="alert alert-primary" role="alert" id="alertLocationBlocked">
+          Please Allow this webpage to know your location, by clicking "Find my
+          Location", and then click on "Allow", otherwise a defaul location will be shown.
+        </div>
+      </div>
+      <div
+        id="showFacilitiesContainer container"
+        style="margin-top: 20px; margin-left: 15px;"
+      >
+        <h3 class="row">Show Facilities Near You:</h3>
+        <div class="row">
+          <button id="facilitiesHospitalsBtn" type="button" class="col-sm bth btn-primary">
+            Hospitals
+          </button>
+
+          <button id="facilitiesParksBtn" type="button" class="col-sm bth btn-primary">
+            Parks
+          </button>
+
+          <button id="facilitiesRestaurantsBtn" type="button" class="col-sm bth btn-primary">
+            Restaurants
+          </button>
+
+          <button id="facilitiesBarsBtn" type="button" class="col-sm bth btn-primary">
+            Bars
+          </button>
+
+          <button id="facilitiesBanksBtn" type="button" class="col-sm bth btn-primary">
+            Banks
+          </button>
+        </div>
+        <div
+          class="customSearchContainer row"
+          style="margin-top: 20px; margin-left: -20px;"
+        >
+          <div class="col-sm">
+            <h5>Custom facility search:</h5>
+            <div class="mb-3 autoComplete">
+              <input
+                type="text"
+                class="form-control"
+                id="customSearch"
+                placeholder="type search here"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="radiusContainer" style="margin-left: -10px;">
+            <h5 class="">Search in a radius around you(km): </h5>
+            <input type="number" value="250" max="250" min="1" class="form-control" id="radiusText" placeholder="">
+            
+        </div>
+        <div id="modeTransportationContainer " style="margin-top: 20px; margin-left: 2px;">
+          <h5 class="row">Show closest facility to you:</h5>
+          <select class="form-select row" id="transportationMethod" aria-label="Default select example">
+            <option selected value="car">By car</option>
+            <option value="pedestrian">By foot</option>
+            <option value="public">By public service</option>
+          </select>
+          <h5  class="row">Steps to get to the closest facility:</h5>
+          <div class="mb-3 row">
+            <textarea
+              class="form-control"
+              id="stepsToGetThereTextArea"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row"><button id="startSearchBtn" class="btn btn-primary col-sm">Search</button></div>
+        
+      </div>
+      
+    </div>
+
+    <div id="mapContainer" style="margin-top: 30px;"></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
