@@ -276,6 +276,7 @@ alertLocationBlocked.classList.add("ninja");
 const API_KEY = "Ha47FpZb8I-KRSf17lKZYp-mKsQy2xnG-rGrNEoKeRw";
 var platform = new H.service.Platform({
   apikey: API_KEY,
+  useHTTPS: true
 });
 var defaulLayers = platform.createDefaultLayers();
 var map = new H.Map(
