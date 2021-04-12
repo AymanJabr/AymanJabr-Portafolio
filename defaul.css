@@ -57,6 +57,15 @@ a {
   font-size: 1.3rem;
 }
 
+.image-link {
+  margin-top: 1rem;
+}
+
+.github-link {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
 ul {
   list-style: none;
 }
