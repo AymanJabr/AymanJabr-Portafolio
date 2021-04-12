@@ -394,6 +394,10 @@ h6 {
 
 }
 
+.post {
+  height: 100%;
+}
+
 @media screen and (max-width: 850px) {
   .main-container {
     width: 85%;
