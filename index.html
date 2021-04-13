@@ -22,7 +22,26 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/93e2543f5e.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/93e2543f5e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T665Y903XP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T665Y903XP");
+    </script>
+
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -128,9 +147,7 @@
 
           <div class="social-links">
             <h3>Find me on LinkedIn & GitHub</h3>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ayman-jabr/"
+            <a target="_blank" href="https://www.linkedin.com/in/ayman-jabr/"
               >LinkedIn</a
             >
             <br />
@@ -191,7 +208,8 @@
                 <div class="post-preview">
                   <h6 class="post-title">Website Clones</h6>
                   <p class="post-intro">
-                    Responsive clones of websites that have a certain degree of complexity or have some interesting feature.
+                    Responsive clones of websites that have a certain degree of
+                    complexity or have some interesting feature.
                   </p>
                   <a target="_blank" href="./clonePages.html"
                     >See all websites Clones.</a
@@ -235,27 +253,48 @@
 
         <p style="margin-top: 5px; margin-bottom: 40px; text-align: center">
           You can email me at
-          <a class="email-special">aymanjaber2012@gmail.com</a> or directly
-          fill the form below.
+          <a class="email-special">aymanjaber2012@gmail.com</a> or directly fill
+          the form below.
         </p>
 
-        <form id="contact-form" class="kwes-form" action="https://kwes.io/api/foreign/forms/uWq4UkcNruMcGOluvA9E">
-        <label>Name</label>
-        <input type="text" id="email_name" name="name" class="input-field" rules="required|max:255" />
-        <label>Subject</label>
-        <input
-          type="text" name="subject" id="email_subject" class="input-field" rules="required|max:255"/>
-        <label>Email</label>
-        <input type="text" name="email" id="email_email" class="input-field" rules="required|email" />
-        <label>Message</label>
-        <textarea
-          class="input-field"
-          id="email_message"
-          name="message"
-        ></textarea>
+        <form
+          id="contact-form"
+          class="kwes-form"
+          action="https://kwes.io/api/foreign/forms/uWq4UkcNruMcGOluvA9E"
+        >
+          <label>Name</label>
+          <input
+            type="text"
+            id="email_name"
+            name="name"
+            class="input-field"
+            rules="required|max:255"
+          />
+          <label>Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="email_subject"
+            class="input-field"
+            rules="required|max:255"
+          />
+          <label>Email</label>
+          <input
+            type="text"
+            name="email"
+            id="email_email"
+            class="input-field"
+            rules="required|email"
+          />
+          <label>Message</label>
+          <textarea
+            class="input-field"
+            id="email_message"
+            name="message"
+          ></textarea>
 
-        <input id="submit-btn" type="submit" value="Send" />
-      </form>
+          <input id="submit-btn" type="submit" value="Send" />
+        </form>
       </div>
     </section>
   </body>
