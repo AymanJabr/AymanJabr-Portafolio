@@ -64,6 +64,11 @@ a {
 .github-link {
   margin-left: 3rem;
   margin-top: 1rem;
+  font-family: sans-serif !important;
+}
+
+.live-link {
+  font-family: sans-serif !important;
 }
 
 ul {
@@ -297,6 +302,9 @@ h6 {
   align-content: center;
   text-align: center;
 }
+.social-links > a {
+  font-family: 'Roboto Mono';
+}
 #social_img {
   width: 100%;
 }
@@ -324,6 +332,11 @@ h6 {
 .post-preview{
     background-color: white;
     padding: 15px;
+}
+.post-preview > a{
+    font-family: 'Roboto Mono';
+    font-weight: 100;
+    font-size: 1.2rem;
 }
 .post-title{
     color: black;
