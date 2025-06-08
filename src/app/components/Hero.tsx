@@ -24,7 +24,7 @@ const Hero = () => {
                     <div className="left-column">
                         <Image id="profile_pic" src="/images/me.jpg" alt="Ayman Jabr" width={250} height={250} />
 
-                        <h5 style={{ textAlign: 'center', lineHeight: 0 }}>
+                        <h5 className="theme-prompt">
                             Click on a ball below to Personalize Theme
                         </h5>
 

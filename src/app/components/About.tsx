@@ -13,15 +13,15 @@ const About = () => {
 
                         <p>
                             I spend my free-time with anything programming related, whether
-                            web development, game design, or blockchain.
+                            web development, game design, or AI.
                         </p>
 
                         <hr />
 
                         <h4>Top Expertise</h4>
 
-                        <div id="skills">
-                            <ul>
+                        <div className="skills-grid">
+                            <ul className="skills-column">
                                 <li>JavaScript/Node.js</li>
                                 <li>Ruby on Rails</li>
                                 <li>Rspec/Capybara</li>
@@ -29,7 +29,7 @@ const About = () => {
                                 <li>Redux</li>
                             </ul>
 
-                            <ul>
+                            <ul className="skills-column">
                                 <li>SQL databases</li>
                                 <li>Git/GitHub</li>
                                 <li>Heroku/Netlify</li>
