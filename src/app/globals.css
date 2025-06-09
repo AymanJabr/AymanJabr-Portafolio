@@ -267,6 +267,34 @@ h6 {
   box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 }
 
+@keyframes wave {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.dots-wrapper-link:hover .browser-dot {
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+.dots-wrapper-link:hover #dot-1 {
+  animation-delay: 0s;
+}
+
+.dots-wrapper-link:hover #dot-2 {
+  animation-delay: 0.1s;
+}
+
+.dots-wrapper-link:hover #dot-3 {
+  animation-delay: 0.2s;
+}
+
 .left-column {
   grid-area: left-column;
   padding-top: 50px;
