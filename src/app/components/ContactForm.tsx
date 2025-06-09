@@ -1,86 +1,117 @@
-'use client';
+"use client";
+import React from "react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+import { toast } from "sonner";
 
-import { useState } from 'react';
+const contactFormSchema = z.object({
+    name: z.string().min(2, "Name must be at least 2 characters."),
+    subject: z.string().min(2, "Subject must be at least 2 characters."),
+    email: z.string().email("Please enter a valid email."),
+    message: z.string().min(10, "Message must be at least 10 characters."),
+});
+
+type ContactFormInputs = z.infer<typeof contactFormSchema>;
 
 const ContactForm = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        subject: '',
-        email: '',
-        message: '',
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isSubmitting },
+        reset,
+    } = useForm<ContactFormInputs>({
+        resolver: zodResolver(contactFormSchema),
     });
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+    const onSubmit: SubmitHandler<ContactFormInputs> = async (data) => {
+        try {
+            const response = await fetch("/api/send", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                toast.success("Thank you! Your message has been sent.");
+                reset();
+            } else {
+                const result = await response.json();
+                toast.error(
+                    result.message || "An error occurred. Please try again."
+                );
+            }
+        } catch (error) {
+            toast.error("An error occurred. Please try again.");
+        }
     };
 
     return (
         <section className="s2">
             <div className="main-container">
-                <h3 style={{ textAlign: 'center' }}>Get In Touch</h3>
-
-                <p style={{ marginTop: '5px', marginBottom: '40px', textAlign: 'center' }}>
-                    You can email me at{' '}
+                <h3 style={{ textAlign: "center" }}>Get In Touch</h3>
+                <p style={{ marginTop: "5px", marginBottom: "40px", textAlign: "center" }}>
+                    You can email me at{" "}
                     <a className="email-special" href="mailto:aymanjaber2012@gmail.com">
                         aymanjaber2012@gmail.com
-                    </a>{' '}
+                    </a>{" "}
                     or directly fill the form below.
                 </p>
 
-                <form
-                    id="contact-form"
-                    action="https://formspree.io/f/mnqodyqa"
-                    method="POST"
-                >
+                <form id="contact-form" onSubmit={handleSubmit(onSubmit)} noValidate>
                     <div className="form-row">
                         <div className="form-group">
-                            <label htmlFor="form-name">Name</label>
+                            <label htmlFor="name">Name</label>
                             <input
-                                id="form-name"
-                                className="input-field"
+                                id="name"
                                 type="text"
-                                name="name"
-                                value={formData.name}
-                                onChange={handleChange}
+                                className="input-field"
+                                {...register("name")}
                             />
+                            {errors.name && <p className="error-message">{errors.name.message}</p>}
                         </div>
                         <div className="form-group">
-                            <label htmlFor="form-subject">Subject</label>
+                            <label htmlFor="subject">Subject</label>
                             <input
-                                id="form-subject"
-                                className="input-field"
+                                id="subject"
                                 type="text"
-                                name="subject"
-                                value={formData.subject}
-                                onChange={handleChange}
+                                className="input-field"
+                                {...register("subject")}
                             />
+                            {errors.subject && (
+                                <p className="error-message">{errors.subject.message}</p>
+                            )}
                         </div>
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="form-email">Email</label>
+                        <label htmlFor="email">Email</label>
                         <input
-                            id="form-email"
-                            className="input-field"
+                            id="email"
                             type="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
+                            className="input-field"
+                            {...register("email")}
                         />
+                        {errors.email && <p className="error-message">{errors.email.message}</p>}
                     </div>
 
                     <div className="form-group">
-                        <label htmlFor="form-message">Message</label>
+                        <label htmlFor="message">Message</label>
                         <textarea
-                            id="form-message"
+                            id="message"
                             className="input-field"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleChange}
+                            {...register("message")}
                         ></textarea>
+                        {errors.message && (
+                            <p className="error-message">{errors.message.message}</p>
+                        )}
                     </div>
 
-                    <input id="submit-btn" type="submit" value="Send" />
+                    <button id="submit-btn" type="submit" disabled={isSubmitting}>
+                        {isSubmitting ? "Sending..." : "Send Message"}
+                    </button>
                 </form>
             </div>
         </section>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Russo_One, Roboto_Mono } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
 import "./globals.css";
+import { Toaster } from "sonner";
 
 const russo_one = Russo_One({
   subsets: ["latin"],
@@ -26,12 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ThemeProvider>
-      <html lang="en" suppressHydrationWarning>
-        <body className={`${russo_one.variable} ${roboto_mono.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${russo_one.variable} ${roboto_mono.variable} antialiased`}>
+        <ThemeProvider>
           {children}
-        </body>
-      </html>
-    </ThemeProvider>
+          <Toaster richColors />
+        </ThemeProvider>
+      </body>
+    </html>
   );
 }
