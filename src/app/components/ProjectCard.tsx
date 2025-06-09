@@ -12,19 +12,17 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ imageSrc, imageAlt, title, intro, linkHref, linkText }: ProjectCardProps) => {
     return (
-        <div>
-            <div className="stack-container">
-                <div className="post">
-                    <Image className="thumbnail" src={imageSrc} alt={imageAlt} width={400} height={200} />
-                    <div className="post-preview">
-                        <h6 className="post-title">{title}</h6>
-                        <p className="post-intro">{intro}</p>
-                        <Link href={linkHref}>{linkText}</Link>
-                    </div>
+        <div className="stack-container" style={{ height: '100%' }}>
+            <div className="post">
+                <Image className="thumbnail" src={imageSrc} alt={imageAlt} width={400} height={200} />
+                <div className="post-preview">
+                    <h6 className="post-title">{title}</h6>
+                    <p className="post-intro">{intro}</p>
+                    <Link href={linkHref}>{linkText}</Link>
                 </div>
-                <div className="stack"></div>
-                <div className="stack2"></div>
             </div>
+            <div className="stack"></div>
+            <div className="stack2"></div>
         </div>
     );
 };

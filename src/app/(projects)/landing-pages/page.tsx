@@ -1,6 +1,4 @@
-import Image from 'next/image';
-import GitHubIcon from "@/app/components/GitHubIcon";
-import ExternalLinkIcon from "@/app/components/ExternalLinkIcon";
+import ProjectPost from "@/app/components/ProjectPost";
 
 const LandingPages = () => {
     return (
@@ -8,75 +6,32 @@ const LandingPages = () => {
             <h3 style={{ textAlign: 'center' }}>Landing Pages</h3>
 
             <div className="post-wrapper">
-                <div>
-                    <div className="post">
-                        <Image className="thumbnail" src="/images/dog website.JPG" alt="Fur & Collar" width={400} height={200} />
-                        <div className="post-preview">
-                            <h6 className="post-title">Fur & Collar</h6>
-                            <p className="post-intro">Landing page for an animal care house.</p>
-                            <a className="live-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://aymanjabr-furncollar-landingpage.netlify.app/"
-                            >See Live<ExternalLinkIcon /></a>
-                            <a
-                                className="github-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://github.com/AymanJabr/FurNCollarLandingPage"
-                            >See Source<GitHubIcon /></a>
-                        </div>
-                    </div>
-                </div>
+                <ProjectPost
+                    title="Fur & Collar"
+                    imageSrc="/images/dog website.JPG"
+                    imageAlt="Fur & Collar"
+                    intro="Landing page for an animal care house."
+                    liveLink="https://aymanjabr-furncollar-landingpage.netlify.app/"
+                    sourceLink="https://github.com/AymanJabr/FurNCollarLandingPage"
+                />
 
-                <div>
-                    <div className="post">
-                        <Image
-                            className="thumbnail"
-                            src="/images/steackhouse website.JPG"
-                            alt="Premium Steakhouse"
-                            width={400}
-                            height={200}
-                        />
-                        <div className="post-preview">
-                            <h6 className="post-title">Premium Steakhouse</h6>
-                            <p className="post-intro">
-                                Landing page for an authentic Steakhouse restaurant.
-                            </p>
-                            <a className="live-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://aymanjabr-steakhouse-landingpage.netlify.app/"
-                            >See Live<ExternalLinkIcon /></a>
-                            <a
-                                className="github-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://github.com/AymanJabr/SteakhouseLandingPage"
-                            >See Source<GitHubIcon /></a>
-                        </div>
-                    </div>
-                </div>
+                <ProjectPost
+                    title="Premium Steakhouse"
+                    imageSrc="/images/steackhouse website.JPG"
+                    imageAlt="Premium Steakhouse"
+                    intro="Landing page for an authentic Steakhouse restaurant."
+                    liveLink="https://aymanjabr-steakhouse-landingpage.netlify.app/"
+                    sourceLink="https://github.com/AymanJabr/SteakhouseLandingPage"
+                />
 
-                <div>
-                    <div className="post">
-                        <Image className="thumbnail" src="/images/trumedis.JPG" alt="Trumedis" width={400} height={200} />
-                        <div className="post-preview">
-                            <h6 className="post-title">Directory of Hospitals</h6>
-                            <p className="post-intro">
-                                Landing page for Trumedis, a USA based directory of hospitals.
-                            </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://trumedis.netlify.app/"
-                            >See Live<ExternalLinkIcon /></a>
-                            <a
-                                className="github-link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="https://github.com/AymanJabr/Directory-of-Hospitals"
-                            >See Source<GitHubIcon /></a>
-                        </div>
-                    </div>
-                </div>
+                <ProjectPost
+                    title="Directory of Hospitals"
+                    imageSrc="/images/trumedis.JPG"
+                    imageAlt="Trumedis"
+                    intro="Landing page for Trumedis, a USA based directory of hospitals."
+                    liveLink="https://trumedis.netlify.app/"
+                    sourceLink="https://github.com/AymanJabr/Directory-of-Hospitals"
+                />
             </div>
         </div>
     );
