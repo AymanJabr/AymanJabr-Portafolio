@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import GitHubIcon from "@/app/components/GitHubIcon";
+import ExternalLinkIcon from "@/app/components/ExternalLinkIcon";
 
 const LandingPages = () => {
     return (
@@ -16,13 +18,13 @@ const LandingPages = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://aymanjabr-furncollar-landingpage.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/FurNCollarLandingPage"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -45,13 +47,13 @@ const LandingPages = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://aymanjabr-steakhouse-landingpage.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/SteakhouseLandingPage"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -65,13 +67,13 @@ const LandingPages = () => {
                                 Landing page for Trumedis, a USA based directory of hospitals.
                             </p>
                             <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://trumedis.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Directory-of-Hospitals"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>

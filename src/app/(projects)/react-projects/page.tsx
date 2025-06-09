@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import GitHubIcon from "@/app/components/GitHubIcon";
+import ExternalLinkIcon from "@/app/components/ExternalLinkIcon";
 
 const ReactProjects = () => {
     return (
@@ -15,8 +17,8 @@ const ReactProjects = () => {
                             <p className="post-intro">
                                 A Single Page Application, that makes use of the Corona-Tracker API. The application is updated bihourly with the worldwide and by country COVID-19 statistics.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://worldwide-covid-statistics.netlify.app/">See Live</a>
-                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Worldwide-Covid-Statistics">See Source</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://worldwide-covid-statistics.netlify.app/">See Live<ExternalLinkIcon /></a>
+                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Worldwide-Covid-Statistics">See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -29,8 +31,8 @@ const ReactProjects = () => {
                             <p className="post-intro">
                                 Implementation of the famous Conway's Game of Life.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://game-of-life-ayman.netlify.app/">See Live</a>
-                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Game-of-Life">See Source</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://game-of-life-ayman.netlify.app/">See Live<ExternalLinkIcon /></a>
+                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Game-of-Life">See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -43,8 +45,8 @@ const ReactProjects = () => {
                             <p className="post-intro">
                                 Classical Hangman game, created using React.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://my-react-hang-man.netlify.app/">See Live</a>
-                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Hangman-React">See Source</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://my-react-hang-man.netlify.app/">See Live<ExternalLinkIcon /></a>
+                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Hangman-React">See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -57,8 +59,8 @@ const ReactProjects = () => {
                             <p className="post-intro">
                                 React single-page app, that makes use of React Routing. In this project I created a simple calculator, with full functionality and testing.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://simple-calculator-project.herokuapp.com/calculator">See Live</a>
-                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/React-Simple-Calculator">See Source</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://simple-calculator-project.herokuapp.com/calculator">See Live<ExternalLinkIcon /></a>
+                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/React-Simple-Calculator">See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -71,8 +73,8 @@ const ReactProjects = () => {
                             <p className="post-intro">
                                 React/Redux single-page app, that makes use of React Routing. In this project we created a simple bookstore app, with the ability to add books and to filter the available ones by category.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://project-bookstore-cms.herokuapp.com/">See Live</a>
-                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Bookstore-CMS">See Source</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://project-bookstore-cms.herokuapp.com/">See Live<ExternalLinkIcon /></a>
+                            <a className="github-link" target="_blank" rel="noopener noreferrer" href="https://github.com/AymanJabr/Bookstore-CMS">See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>

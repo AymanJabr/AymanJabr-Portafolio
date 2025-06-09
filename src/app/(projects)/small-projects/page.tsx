@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import GitHubIcon from "@/app/components/GitHubIcon";
+import ExternalLinkIcon from "@/app/components/ExternalLinkIcon";
 
 const SmallProjects = () => {
     return (
@@ -14,13 +16,13 @@ const SmallProjects = () => {
                             <p className="post-intro">
                                 Play the classic Tic-Tac-Toe game with a friend.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://aymanjabr-tictactoe.netlify.app/">See Live</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://aymanjabr-tictactoe.netlify.app/">See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/TicTacToe-JS-Game"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -37,13 +39,13 @@ const SmallProjects = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://aymanjabr-speedtypinggame.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Speed-Typing-Game-JS-with-famous-quotes"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -61,13 +63,13 @@ const SmallProjects = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://blackjackgame-2decks.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Blackjack-game-full-shoe-2-decks"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -80,13 +82,13 @@ const SmallProjects = () => {
                             <p className="post-intro">
                                 Want to become the next Mozart? Start here.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://aymanjabr-minipiano.netlify.app/">See Live</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://aymanjabr-minipiano.netlify.app/">See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Mini-piano"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -99,13 +101,13 @@ const SmallProjects = () => {
                             <p className="post-intro">
                                 A simple arcade platform jumper, that uses an API to store the worldwide highscores of players. It uses the Phaser3 game engine.
                             </p>
-                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://simple-platform-jumper.netlify.app/">See Live</a>
+                            <a className="live-link" target="_blank" rel="noopener noreferrer" href="https://simple-platform-jumper.netlify.app/">See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Endless-Platformer-Phaser"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -123,13 +125,13 @@ const SmallProjects = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://aymanjabr-computer-speak.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Text-To-Audio-JS-Speaker"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>

@@ -144,6 +144,18 @@ a {
   font-family: sans-serif !important;
 }
 
+.live-link,
+.github-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.project-link-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.6rem;
+}
+
 ul {
   list-style: none;
 }

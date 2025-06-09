@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import GitHubIcon from "@/app/components/GitHubIcon";
+import ExternalLinkIcon from "@/app/components/ExternalLinkIcon";
 
 const ClonePages = () => {
     return (
@@ -20,13 +22,13 @@ const ClonePages = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://nytimecloneforprojectone.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Project-1-NY-Times"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -45,13 +47,13 @@ const ClonePages = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://microverse-newsweekclone.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/New-week-clone"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
@@ -67,13 +69,13 @@ const ClonePages = () => {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://microverse-tnw-clone.netlify.app/"
-                            >See Live</a>
+                            >See Live<ExternalLinkIcon /></a>
                             <a
                                 className="github-link"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://github.com/AymanJabr/Microverse-TNW-Clone"
-                            >See Source</a>
+                            >See Source<GitHubIcon /></a>
                         </div>
                     </div>
                 </div>
