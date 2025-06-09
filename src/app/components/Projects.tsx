@@ -8,6 +8,14 @@ const Projects = () => {
 
                 <div className="post-wrapper">
                     <ProjectCard
+                        imageSrc="/images/pdf-analyzer.png"
+                        imageAlt="AI projects"
+                        title="AI Based Projects"
+                        intro="A collection of projects that leverage AI for various tasks, from PDF analysis to virtual try-ons."
+                        linkHref="/ai-projects"
+                        linkText="See all AI projects"
+                    />
+                    <ProjectCard
                         imageSrc="/images/dog website.JPG"
                         imageAlt="Landing pages"
                         title="Landing Pages"
