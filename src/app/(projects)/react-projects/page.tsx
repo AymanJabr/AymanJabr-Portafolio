@@ -7,15 +7,6 @@ const ReactProjects = () => {
 
             <div className="post-wrapper">
                 <ProjectPost
-                    title="Worldwide COVID-19 Statistics"
-                    imageSrc="/images/covid-statistics.JPG"
-                    imageAlt="COVID-19 Statistics"
-                    intro="A Single Page Application, that makes use of the Corona-Tracker API. The application is updated bihourly with the worldwide and by country COVID-19 statistics."
-                    liveLink="https://worldwide-covid-statistics.netlify.app/"
-                    sourceLink="https://github.com/AymanJabr/Worldwide-Covid-Statistics"
-                />
-
-                <ProjectPost
                     title="Game of Life"
                     imageSrc="/images/game-of-life.JPG"
                     imageAlt="Game of Life"
