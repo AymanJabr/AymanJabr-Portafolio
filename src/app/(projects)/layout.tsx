@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function ProjectsLayout({ children }: { children: ReactNode }) {
     return (
-        <main>
+        <main className="s1 s2">
             <div className="nav-wrapper">
                 <Link href="/" className="dots-wrapper-link">
                     <div className="dots-wrapper">

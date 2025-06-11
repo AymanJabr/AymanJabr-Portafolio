@@ -13,7 +13,6 @@ const SmallProjects = () => {
                     intro="Play the classic Tic-Tac-Toe game with a friend."
                     liveLink="https://aymanjabr-tictactoe.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/TicTacToe-JS-Game"
-                    fullHeight
                 />
                 <ProjectPost
                     title="Speed Typing Game"
@@ -22,7 +21,6 @@ const SmallProjects = () => {
                     intro="Test your typing speed against quotes from famous people."
                     liveLink="https://aymanjabr-speedtypinggame.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/Speed-Typing-Game-JS-with-famous-quotes"
-                    fullHeight
                 />
                 <ProjectPost
                     title="Full Blackjack game."
@@ -31,7 +29,6 @@ const SmallProjects = () => {
                     intro="Classic Blackjack game with 2 decks. It contains the ability to surrender, double down, split, and insure."
                     liveLink="https://blackjackgame-2decks.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/Blackjack-game-full-shoe-2-decks"
-                    fullHeight
                 />
                 <ProjectPost
                     title="Mini-Piano game."
@@ -40,7 +37,6 @@ const SmallProjects = () => {
                     intro="Want to become the next Mozart? Start here."
                     liveLink="https://aymanjabr-minipiano.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/Mini-piano"
-                    fullHeight
                 />
                 <ProjectPost
                     title="Simple platform jumper"
@@ -49,7 +45,6 @@ const SmallProjects = () => {
                     intro="A simple arcade platform jumper, that uses an API to store the worldwide highscores of players. It uses the Phaser3 game engine."
                     liveLink="https://simple-platform-jumper.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/Endless-Platformer-Phaser"
-                    fullHeight
                 />
                 <ProjectPost
                     title="Computer Speak."
@@ -58,7 +53,6 @@ const SmallProjects = () => {
                     intro="A fun tool where you can make the computer say anything you want at different speeds."
                     liveLink="https://aymanjabr-computer-speak.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/Text-To-Audio-JS-Speaker"
-                    fullHeight
                 />
             </div>
         </div>

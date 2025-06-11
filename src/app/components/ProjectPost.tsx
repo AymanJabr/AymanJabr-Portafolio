@@ -9,7 +9,6 @@ interface ProjectPostProps {
     intro: string;
     liveLink: string;
     sourceLink: string;
-    fullHeight?: boolean;
 }
 
 const ProjectPost = ({
@@ -19,11 +18,10 @@ const ProjectPost = ({
     intro,
     liveLink,
     sourceLink,
-    fullHeight,
 }: ProjectPostProps) => {
     return (
         <div>
-            <div className="post" style={fullHeight ? { height: '100%' } : {}}>
+            <div className="post" style={{ height: '100%' }}>
                 <Image
                     className="thumbnail"
                     src={imageSrc}

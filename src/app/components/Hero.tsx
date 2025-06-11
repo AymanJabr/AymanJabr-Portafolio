@@ -43,8 +43,8 @@ const Hero = () => {
                                 <div id="corner-tr" className="corner"></div>
                                 <h3>What Do I Do?</h3>
                                 <p>
-                                    I design, develop, and deploy beautiful and modern websites,
-                                    and Android applications.
+                                    I design, develop, and deploy beautiful modern websites,
+                                    and AI-powered intregrations.
                                 </p>
                                 <div id="corner-br" className="corner"></div>
                                 <div id="corner-bl" className="corner"></div>
