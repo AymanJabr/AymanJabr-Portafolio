@@ -10,7 +10,7 @@ const AiProjects = () => {
                     title="AI-Pdf-Analyzer"
                     imageSrc="/images/pdf-analyzer.png"
                     imageAlt="AI-Pdf-Analyzer"
-                    intro="A Next.js application that allows users to upload PDF documents, extract text using OCR, and ask natural language questions about the content using AI."
+                    intro="Allows users to upload PDF documents, extract text using OCR, RAG, and ask natural language questions about the content using AI. It provides links to it's responses from the proviided pdf itself"
                     liveLink="https://ai-pdf-analyser.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/AI-PDF-Analyser"
                 />

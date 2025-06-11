@@ -22,24 +22,24 @@ const About = () => {
 
                         <div className="skills-grid">
                             <ul className="skills-column">
-                                <li>JavaScript/Node.js</li>
+                                <li>Next.js / TypeScript</li>
                                 <li>Ruby on Rails</li>
-                                <li>Rspec/Capybara</li>
-                                <li>React</li>
-                                <li>Redux</li>
+                                <li>PostgreSQL / Supabase</li>
+                                <li>GraphQL</li>
+                                <li>Infrastructure Architecture</li>
                             </ul>
 
                             <ul className="skills-column">
-                                <li>SQL databases</li>
-                                <li>Git/GitHub</li>
-                                <li>Heroku/Netlify</li>
-                                <li>HTML5/CSS</li>
-                                <li>Typescript</li>
+                                <li>TDD / Domain Driven Design</li>
+                                <li>RAG / LangChain</li>
+                                <li>AWS</li>
+                                <li>Remote Pair-Programming</li>
+                                <li>Technical Mentorship</li>
                             </ul>
                         </div>
 
                         <p>
-                            <a target="_blank" href="/CV_Resume.pdf">Download Full Resume</a>
+                            <a target="_blank" href="/achievements_focused_resume.pdf">Download Full Resume</a>
                         </p>
                     </div>
 
