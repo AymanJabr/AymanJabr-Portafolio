@@ -19,6 +19,9 @@ const roboto_mono = Roboto_Mono({
 export const metadata: Metadata = {
   title: "Ayman Jabr Portfolio",
   description: "I design, develop, and deploy beautiful and modern websites, and Android applications.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
