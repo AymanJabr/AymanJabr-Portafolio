@@ -24,14 +24,6 @@ const Projects = () => {
                         linkText="See all Landing pages."
                     />
                     <ProjectCard
-                        imageSrc="/images/theNextWeb.JPG"
-                        imageAlt="Website clones"
-                        title="Website Clones"
-                        intro="Responsive clones of websites that have a certain degree of complexity or have some interesting feature."
-                        linkHref="/clone-pages"
-                        linkText="See all website clones."
-                    />
-                    <ProjectCard
                         imageSrc="/images/blackjack game.JPG"
                         imageAlt="Small projects and games"
                         title="Small Projects and Games"
