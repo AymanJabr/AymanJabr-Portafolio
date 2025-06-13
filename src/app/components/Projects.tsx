@@ -24,22 +24,6 @@ const Projects = () => {
                         linkText="See all Landing pages."
                     />
                     <ProjectCard
-                        imageSrc="/images/SocialMedia.JPG"
-                        imageAlt="Rails projects"
-                        title="Rails Projects"
-                        intro="A collection of websites that showcase some of the previous Rails projects that I have worked on solo or as a part of a team."
-                        linkHref="/rails-projects"
-                        linkText="See all Rails projects"
-                    />
-                    <ProjectCard
-                        imageSrc="/images/bookstore.JPG"
-                        imageAlt="React projects"
-                        title="React Projects"
-                        intro="A collection of simple projects and games done using React on the front-end, some of these projects are using an API as a backend."
-                        linkHref="/react-projects"
-                        linkText="See all React projects"
-                    />
-                    <ProjectCard
                         imageSrc="/images/theNextWeb.JPG"
                         imageAlt="Website clones"
                         title="Website Clones"
@@ -49,11 +33,11 @@ const Projects = () => {
                     />
                     <ProjectCard
                         imageSrc="/images/blackjack game.JPG"
-                        imageAlt="Small projects"
+                        imageAlt="Small projects and games"
                         title="Small Projects and Games"
-                        intro="A collection of small projects that have been built to showcase a particular skill or feature."
-                        linkHref="/small-projects"
-                        linkText="See all small projects"
+                        intro="A collection of small projects and games, some built with React, to showcase particular skills or features."
+                        linkHref="/small-projects-and-games"
+                        linkText="See all small projects and games"
                     />
                 </div>
             </div>
@@ -61,4 +45,4 @@ const Projects = () => {
     );
 };
 
-export default Projects; 
+export default Projects;
