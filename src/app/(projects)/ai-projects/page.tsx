@@ -38,7 +38,7 @@ const AiProjects = () => {
                     imageSrc="/images/hAI-lights-maker.png"
                     imageAlt="hAI-lights-maker"
                     intro="An AI-powered video highlight generator that automatically creates engaging clips from longer videos."
-                    liveLink="https://hai-lights-maker.netlify.app/"
+                    liveLink="https://hai-lights-maker.vercel.app/"
                     sourceLink="https://github.com/AymanJabr/hAI-lights-maker"
                 />
             </div>
