@@ -29,7 +29,7 @@ const AiProjects = () => {
                     imageSrc="/images/dressed-by-ai.png"
                     imageAlt="Dressed-by-AI"
                     intro="A virtual try-on application that uses AI to visualize how clothing items would look on you. Select from default models or upload your own photos, and get a realistic visualization of how clothing items would look on you."
-                    liveLink="https://dressed-by-ai.netlify.app/"
+                    liveLink="https://dressed-by-ai-102777500533.europe-west1.run.app/"
                     sourceLink="https://github.com/AymanJabr/Dressed-by-AI"
                 />
 
