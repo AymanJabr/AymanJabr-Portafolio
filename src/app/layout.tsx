@@ -3,6 +3,7 @@ import { Russo_One, Roboto_Mono } from "next/font/google";
 import { ThemeProvider } from "./components/ThemeProvider";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { PostHogProvider } from "@/providers/posthog-provider";
 
 const russo_one = Russo_One({
   subsets: ["latin"],
@@ -32,10 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${russo_one.variable} ${roboto_mono.variable} antialiased`}>
-        <ThemeProvider>
-          {children}
-          <Toaster richColors />
-        </ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider>
+            {children}
+            <Toaster richColors />
+          </ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
