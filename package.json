@@ -10,12 +10,12 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
-    "@react-email/components": "^0.5.7",
+    "@react-email/components": "^1.0.6",
     "next": "15.4.10",
-    "posthog-js": "^1.333.0",
+    "posthog-js": "^1.335.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "react-email": "^4.3.2",
+    "react-email": "^5.2.5",
     "react-hook-form": "^7.71.1",
     "resend": "^6.8.0",
     "sonner": "^2.0.7",
@@ -23,12 +23,12 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^24.10.9",
-    "@types/react": "^19",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.10",
+    "@types/react": "^19.2.9",
     "@types/react-dom": "^19.2.3",
     "eslint": "^9.39.2",
-    "eslint-config-next": "15.5.9",
+    "eslint-config-next": "16.1.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
