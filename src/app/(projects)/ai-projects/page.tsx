@@ -14,6 +14,14 @@ const AiProjects = () => {
                     liveLink="https://ai-pdf-analyser.netlify.app/"
                     sourceLink="https://github.com/AymanJabr/AI-PDF-Analyser"
                 />
+                <ProjectPost
+                    title="Escape the room"
+                    imageSrc="/images/escape-the-room.png"
+                    imageAlt="Escape the room"
+                    intro="A framework that bridges traditional narrative game engines (Renpy, Twine) and AI chat experiences (SillyTavern, AI Dungeon). The core idea: give players freedom to speak and act naturally, but enforce story progression and character stats through a deterministic backend the AI cannot override."
+                    liveLink="https://escape-room-fldd.onrender.com/"
+                    sourceLink="https://github.com/AymanJabr/Escape-the-room-AI-stats-game"
+                />
 
                 <ProjectPost
                     title="AI-Focus-Group"
